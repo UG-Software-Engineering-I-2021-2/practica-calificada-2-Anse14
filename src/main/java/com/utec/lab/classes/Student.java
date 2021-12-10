@@ -16,7 +16,7 @@ public class Student {
         this.baseGrade = baseGrade;
     }
 
-    int grade() {
+    public int grade() {
         switch (type) {
             case UNDERGRADUATE:
                 return baseGrade;

@@ -25,7 +25,7 @@ public class Teacher {
         this.bonus = bonus;
     }
 
-    int salary() {
+    public int salary() {
         switch (type) {
             case PROFESSOR_PT:
                 return monthlyBaseSalary;
