@@ -1,0 +1,20 @@
+version: '3'
+
+dotenv: [".env"]
+
+tasks:
+  run:
+    cmds:
+      - mvn clean compile exec:java
+
+  clean:
+    cmds:
+      - mvn clean
+  
+  test:
+    cmds:
+      - mvn test
+
+  sonar:
+    cmds:
+      - mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=UG-Software-Engineering-I-2021-2_practica-calificada-2-Anse14
